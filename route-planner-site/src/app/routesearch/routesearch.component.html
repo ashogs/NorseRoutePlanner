@@ -1,0 +1,21 @@
+<div *ngIf="routeData">
+
+
+
+<h2>
+
+      <div class="input-group-prepend">
+        <input layout-align="center center" type="text" #reiserFra class="form-control" placeholder="Hvor reiser du fra?" name="reiserFra" ngModel>
+        <input layout-align="center center" type="text" #reiserTil class="form-control" placeholder="Hvor skal du?" name="reiserTil">
+        <button layout-align="center center" class="input-group-text" (click)="addToValue(reiserFra, reiserTil)">Finn avstand</button>
+        <div class="data">
+        </div>
+      </div>
+
+</h2>
+  <br/><br/><br/><br/><br/>
+  <span>{{routeData}}</span>
+
+</div>
+
+<router-outlet></router-outlet>
